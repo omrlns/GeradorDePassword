@@ -107,3 +107,17 @@ body{
     bottom: 50px;
     opacity: 1;
 }
+
+.info{
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+h5{
+    color:gold;
+    text-align: center;
+    font-size: 14px;
+}

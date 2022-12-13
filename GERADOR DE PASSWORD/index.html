@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="gerador de senhas, gerador password">
+    <title>Gerador de Senha</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <img class="logo" src="./IMAGENS/logo.png" alt="gerador de senha (logo)" />
+
+    <main class="container-input">
+        <span>tamanho da senha: <span id="valor"></span> caracteres </span>
+        <input id="slider" class="slider" type="range" min="5" max="25" value="15" />
+
+        <button id="button" class="button-cta" onclick="generatePassword()">GERAR SENHA</button>
+    </main>
+
+    <!--bloco base de informações que mostram as características das possíveis senhhas geradas-->
+    <!--anotar bloco de comando para que o mesmo vire um sistema de validação, integrado com o uptade VALIDAÇÃO-->
+    <div class="info">
+        <div class="feed">NÚMERO DE CARACTERES: MÍNIMO 05 / MÁXIMO 25</div>
+        <div class="feed">NÚMEROS DE 0 A 9</div>
+        <div class="feed">CARACTERES ESPECIAIS: !@#</div>
+    </div>
+
+    <!--bloco de show code final, onde é possível copiar a senha através de uma função-->
+    <div id="container-password" onclick="copyPassword()" class="container-password hide">
+        <span class="title"> sua senha gerada foi:</span>
+        <span id="password" class="password"></span>
+        <span class="tooltip">clique na senha para copiar.</span>
+    </div>
+    <br>
+        <h5>by: @marlon</h5>
+    </br>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
